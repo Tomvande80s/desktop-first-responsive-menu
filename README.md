@@ -8,8 +8,8 @@ Uses :target pseudo-class to open the menu on screen widths less than 780px. A m
 
 ## Screenshots
 ### Desktop
-![Desktop menu](/images/navbardesktop)
+![Desktop menu](https://github.com/Tomvande80s/desktop-first-responsive-menu/blob/master/images/navbardesktop.png)
 ### Mobile - menu closed
-![Closed mobile menu](/images/navbarmobileclosed)
+![Closed mobile menu](https://github.com/Tomvande80s/desktop-first-responsive-menu/blob/master/images/navbarmobileclosed.png)
 ### Mobile - menu open
-![Open mobile menu](/images/navbarmobileopen)
+![Open mobile menu](https://github.com/Tomvande80s/desktop-first-responsive-menu/blob/master/images/navbarmobileopen.png)
