@@ -1,0 +1,118 @@
+/* General setup */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  font-family: Verdana, sans-serif;
+}
+
+nav,
+nav button {
+  background-color: #006c00;
+}
+
+nav button {
+  border: none;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Layout */
+
+nav {
+  display: flex;
+  font-size: 2rem;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+}
+
+nav li:hover, nav a:hover {
+  background: #00bf00;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.logo-button {
+  display: contents;
+  font-size: 2rem;
+}
+
+.close-menu {
+  display: contents;
+}
+
+.close-menu a {
+  display: none;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 780px) {
+  body {
+    width: 100%;
+    max-width: 780px;
+    min-width: 300px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    /* Hidden at widths less than 780px */
+    display: none;
+    text-align: center;
+  }
+
+  nav ul:target {
+    /* Makes the menu visible */
+    display: block;
+  }
+
+  .close-menu a {
+    /* Simply changes :target which hides the menu */
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .site-logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
