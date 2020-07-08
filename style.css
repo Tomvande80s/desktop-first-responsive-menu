@@ -69,17 +69,17 @@ nav li:hover, nav a:hover {
 }
 
 .logo-button {
-  display: contents;
+  display: flex;
   font-size: 2rem;
 }
 
 .close-menu {
-  display: contents;
-}
-
-.close-menu a {
   display: none;
 }
+
+/* .close-menu a {
+  display: none;
+} */
 
 /* Responsive Layout */
 @media only screen and (max-width: 780px) {
@@ -104,15 +104,18 @@ nav li:hover, nav a:hover {
     display: block;
   }
 
-  .close-menu a {
+  .close-menu {
     /* Simply changes :target which hides the menu */
     display: block;
     font-size: 1.5rem;
   }
 
   .site-logo {
+    justify-content: center;
+  }
+
+  .logo-button {
     width: 100%;
-    display: block;
-    text-align: center;
+    justify-content: center;
   }
 }
